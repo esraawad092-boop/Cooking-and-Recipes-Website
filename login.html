@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeHub - تسجيل الدخول</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+
+    <div class="login-container">
+        <h2>تسجيل الدخول إلى RecipeHub</h2>
+        <p>اكتشف وأطبخ أشهى الوصفات</p>
+        
+        <!-- 1. أضفنا id="loginForm" هنا وأضفنا action="index.html" ليتوجه للصفحة عند نجاح التحقق -->
+        <form id="loginForm" action="index.html">
+            <div class="input-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" required placeholder="example@mail.com">
+            </div>
+            
+            <div class="input-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" required placeholder="********">
+            </div>
+            
+            <!-- 2. حولنا الرابط إلى زر submit حقيقي -->
+            <button type="submit" class="btn-submit">دخول</button>
+        </form>
+    </div>
+
+    <!-- استدعاء ملف الجافا سكريبت -->
+    <script src="js/main.js"></script>
+</body>
+</html>
